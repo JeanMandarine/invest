@@ -4,7 +4,7 @@
 et il me propose ça comme script pr aller chercher mon prix 
 
 // Sélectionner la ligne du tableau
-const row_8 = document.querySelector("tbody").rows[7].cells[5];
+const row_8 = document.querySelector("tbody").rows[7];
 
 // Sélectionner la sixième case de la huitième ligne du tableau
 const cell_8_6 = row_8.cells[5];
