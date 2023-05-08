@@ -35,7 +35,11 @@ cell_8_6.textContent = valeur; // met à jour le contenu de la cellule avec la v
 
 
 sachant que la ligne de code sur le site que je veux ressemble à ça 
+
+
 "span class="custom-currency" data-price="14999" data-type="small" data-original-currency="CNY"  ></span"
+
+
 
 yooo je peut pas coller une ligne de code du site 
 et que je veux juste extraire le 14999 pour le coller dans mon tableau
