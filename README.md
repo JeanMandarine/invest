@@ -44,3 +44,23 @@ sachant que la ligne de code sur le site que je veux ressemble à ça
 yooo je peut pas coller une ligne de code du site 
 et que je veux juste extraire le 14999 pour le coller dans mon tableau
 mais ça marche pas wlh
+
+
+
+
+
+il me propose aussi ça maintenant, ça parait coherent mais marche pas
+
+
+const lines = document.body.textContent.split('\n');
+const line_1013 = lines[1012];
+
+const regex = /data-price="(\d+)"/; // expression régulière pour trouver la valeur de l'attribut data-price
+
+const match = line_1013.match(regex); // recherche la correspondance de l'expression régulière dans la ligne
+
+if (match) {
+  const valeur = match[1]; // extrait la valeur de l'attribut data-price
+  const cell_8_6 = document.querySelector("tbody").rows[7].cells[5]; // sélectionne la sixième cellule de la huitième ligne
+  cell_8_6.textContent = valeur; // met à jour le contenu de la cellule avec la valeur récupérée
+}
