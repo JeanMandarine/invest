@@ -1,0 +1,630 @@
+<table>
+  <thead>
+    <tr>
+      <th>DATE</th>
+      <th>NOMBRE</th>
+      <th>NOM</th>
+      <th>PHOTO</th>
+      <th>PRIX D'ACHAT</th>
+      <th>PRIX ACTUEL</th>
+    </tr>
+  </thead>
+  <tbody id="table-body">
+  </tbody>
+</table>
+
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+th {
+  background-color: #cac4c4;
+
+}
+
+tr:hover {
+  background-color: #bebdbd;
+}
+
+td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+td:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+
+
+
+</style>
+
+
+<script>
+
+const tableBody = document.querySelector("tbody");
+
+for (let i = 0; i < 50; i++) {
+  const row = document.createElement("tr");
+
+  for (let j = 0; j < 6; j++) {
+    const cell = document.createElement("td");
+    row.appendChild(cell);
+  }
+
+  tableBody.appendChild(row);
+}
+
+
+
+
+// (code pour remplir le tableau cell__1.textContent = ""
+
+const cell_1_1 = document.querySelector("tbody").rows[0].cells[0];
+const cell_1_2 = document.querySelector("tbody").rows[0].cells[1];
+const cell_1_3 = document.querySelector("tbody").rows[0].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_1_4 = document.querySelector("tbody").rows[0].cells[3];
+const img_1_4 = document.createElement("img");
+img_1_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/5bc03e207f9d2ac84dc2c987pfO69IGg")
+img_1_4.setAttribute("alt", "niko");
+img_1_4.style.width = "100px";
+img_1_4.style.height = "100px";
+
+const cell_1_5 = document.querySelector("tbody").rows[0].cells[4];
+const cell_1_6 = document.querySelector("tbody").rows[0].cells[5];
+
+const cell_2_1 = document.querySelector("tbody").rows[1].cells[0];
+const cell_2_2 = document.querySelector("tbody").rows[1].cells[1];
+const cell_2_3 = document.querySelector("tbody").rows[1].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_2_4 = document.querySelector("tbody").rows[1].cells[3];
+const img_2_4 = document.createElement("img");
+img_2_4.setAttribute("src", "https://spect.fp.ps.netease.com/file/6452acfc3fc7c91b7588ababEdT1S1kW04?fop=imageView/2/w/245/h/230")
+img_2_4.setAttribute("alt", "niko");
+img_2_4.style.width = "100px";
+img_2_4.style.height = "80px";
+
+const cell_2_5 = document.querySelector("tbody").rows[1].cells[4];
+const cell_2_6 = document.querySelector("tbody").rows[1].cells[5];
+
+const cell_3_1 = document.querySelector("tbody").rows[2].cells[0];
+const cell_3_2 = document.querySelector("tbody").rows[2].cells[1];
+const cell_3_3 = document.querySelector("tbody").rows[2].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_3_4 = document.querySelector("tbody").rows[2].cells[3];
+const img_3_4 = document.createElement("img");
+img_3_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/618b224e79d2f7ab24957514BbwCDbA303")
+img_3_4.setAttribute("alt", "niko");
+img_3_4.style.width = "100px";
+img_3_4.style.height = "100px";
+
+const cell_3_5 = document.querySelector("tbody").rows[2].cells[4];
+const cell_3_6 = document.querySelector("tbody").rows[2].cells[5];
+
+const cell_4_1 = document.querySelector("tbody").rows[3].cells[0];
+const cell_4_2 = document.querySelector("tbody").rows[3].cells[1];
+const cell_4_3 = document.querySelector("tbody").rows[3].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_4_4 = document.querySelector("tbody").rows[3].cells[3];
+const img_4_4 = document.createElement("img");
+img_4_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/618b23c1fbfe1b35d389e8daYV4bY1bj03")
+img_4_4.setAttribute("alt", "niko");
+img_4_4.style.width = "100px";
+img_4_4.style.height = "100px";
+
+const cell_4_5 = document.querySelector("tbody").rows[3].cells[4];
+const cell_4_6 = document.querySelector("tbody").rows[3].cells[5];
+
+const cell_5_1 = document.querySelector("tbody").rows[4].cells[0];
+const cell_5_2 = document.querySelector("tbody").rows[4].cells[1];
+const cell_5_3 = document.querySelector("tbody").rows[4].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_5_4 = document.querySelector("tbody").rows[4].cells[3];
+const img_5_4 = document.createElement("img");
+img_5_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/618b2069b866f806d961a324TUcbDZ2p03")
+img_5_4.setAttribute("alt", "niko");
+img_5_4.style.width = "100px";
+img_5_4.style.height = "100px";
+
+const cell_5_5 = document.querySelector("tbody").rows[4].cells[4];
+const cell_5_6 = document.querySelector("tbody").rows[4].cells[5];
+
+const cell_6_1 = document.querySelector("tbody").rows[5].cells[0];
+const cell_6_2 = document.querySelector("tbody").rows[5].cells[1];
+const cell_6_3 = document.querySelector("tbody").rows[5].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_6_4 = document.querySelector("tbody").rows[5].cells[3];
+const img_6_4 = document.createElement("img");
+img_6_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/618b1dd4bca47b1b8e6b3b02KJqSPcoe03")
+img_6_4.setAttribute("alt", "niko");
+img_6_4.style.width = "100px";
+img_6_4.style.height = "100px";
+
+const cell_6_5 = document.querySelector("tbody").rows[5].cells[4];
+const cell_6_6 = document.querySelector("tbody").rows[5].cells[5];
+
+const cell_7_1 = document.querySelector("tbody").rows[6].cells[0];
+const cell_7_2 = document.querySelector("tbody").rows[6].cells[1];
+const cell_7_3 = document.querySelector("tbody").rows[6].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_7_4 = document.querySelector("tbody").rows[6].cells[3];
+const img_7_4 = document.createElement("img");
+img_7_4.setAttribute("src", "https://spect.fp.ps.netease.com/file/645377852942867dd2bfc85czoy78QPB04?fop=imageView/2/w/245/h/230")
+img_7_4.setAttribute("alt", "niko");
+img_7_4.style.width = "100px";
+img_7_4.style.height = "40px";
+
+const cell_7_5 = document.querySelector("tbody").rows[6].cells[4];
+const cell_7_6 = document.querySelector("tbody").rows[6].cells[5];
+
+const cell_8_1 = document.querySelector("tbody").rows[7].cells[0];
+const cell_8_2 = document.querySelector("tbody").rows[7].cells[1];
+const cell_8_3 = document.querySelector("tbody").rows[7].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_8_4 = document.querySelector("tbody").rows[7].cells[3];
+const img_8_4 = document.createElement("img");
+img_8_4.setAttribute("src", "https://spect.fp.ps.netease.com/file/6428ae880c02f7b513dffa3dbHLgZ6Vf04?fop=imageView/2/w/245/h/230")
+img_8_4.setAttribute("alt", "niko");
+img_8_4.style.width = "100px";
+img_8_4.style.height = "40px";
+
+const cell_8_5 = document.querySelector("tbody").rows[7].cells[4];
+
+
+const cell_9_1 = document.querySelector("tbody").rows[8].cells[0];
+const cell_9_2 = document.querySelector("tbody").rows[8].cells[1];
+const cell_9_3 = document.querySelector("tbody").rows[8].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_9_4 = document.querySelector("tbody").rows[8].cells[3];
+const img_9_4 = document.createElement("img");
+img_9_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/614a94db12779a1ebecd19755yMjbwNL03")
+img_9_4.setAttribute("alt", "niko");
+img_9_4.style.width = "100px";
+img_9_4.style.height = "100px";
+
+const cell_9_5 = document.querySelector("tbody").rows[8].cells[4];
+const cell_9_6 = document.querySelector("tbody").rows[8].cells[5];
+
+const cell_10_1 = document.querySelector("tbody").rows[9].cells[0];
+const cell_10_2 = document.querySelector("tbody").rows[9].cells[1];
+const cell_10_3 = document.querySelector("tbody").rows[9].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_10_4 = document.querySelector("tbody").rows[9].cells[3];
+const img_10_4 = document.createElement("img");
+img_10_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/614a9bb413c49b47dc88a7f5NV8BJUGY03")
+img_10_4.setAttribute("alt", "niko");
+img_10_4.style.width = "100px";
+img_10_4.style.height = "100px";
+
+const cell_10_5 = document.querySelector("tbody").rows[9].cells[4];
+const cell_10_6 = document.querySelector("tbody").rows[9].cells[5];
+
+const cell_11_1 = document.querySelector("tbody").rows[10].cells[0];
+const cell_11_2 = document.querySelector("tbody").rows[10].cells[1];
+const cell_11_3 = document.querySelector("tbody").rows[10].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_11_4 = document.querySelector("tbody").rows[10].cells[3];
+const img_11_4 = document.createElement("img");
+img_11_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/614a92463f368daf41e16475ZU3hVtS103")
+img_11_4.setAttribute("alt", "niko");
+img_11_4.style.width = "100px";
+img_11_4.style.height = "100px";
+
+const cell_11_5 = document.querySelector("tbody").rows[10].cells[4];
+const cell_11_6 = document.querySelector("tbody").rows[10].cells[5];
+
+const cell_12_1 = document.querySelector("tbody").rows[11].cells[0];
+const cell_12_2 = document.querySelector("tbody").rows[11].cells[1];
+const cell_12_3 = document.querySelector("tbody").rows[11].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_12_4 = document.querySelector("tbody").rows[11].cells[3];
+const img_12_4 = document.createElement("img");
+img_12_4.setAttribute("src", "https://spect.fp.ps.netease.com/file/643d1228cd02260dee851359XxVqykgr04?fop=imageView/2/w/245/h/230")
+img_12_4.setAttribute("alt", "niko");
+img_12_4.style.width = "100px";
+img_12_4.style.height = "30px";
+
+const cell_12_5 = document.querySelector("tbody").rows[11].cells[4];
+const cell_12_6 = document.querySelector("tbody").rows[11].cells[5];
+
+const cell_13_1 = document.querySelector("tbody").rows[12].cells[0];
+const cell_13_2 = document.querySelector("tbody").rows[12].cells[1];
+const cell_13_3 = document.querySelector("tbody").rows[12].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_13_4 = document.querySelector("tbody").rows[12].cells[3];
+const img_13_4 = document.createElement("img");
+img_13_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/5aa091c920e3db096ff6843cVzDYC6Hj")
+img_13_4.setAttribute("alt", "niko");
+img_13_4.style.width = "100px";
+img_13_4.style.height = "100px";
+
+const cell_13_5 = document.querySelector("tbody").rows[12].cells[4];
+const cell_13_6 = document.querySelector("tbody").rows[12].cells[5];
+
+const cell_14_1 = document.querySelector("tbody").rows[13].cells[0];
+const cell_14_2 = document.querySelector("tbody").rows[13].cells[1];
+const cell_14_3 = document.querySelector("tbody").rows[13].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_14_4 = document.querySelector("tbody").rows[13].cells[3];
+const img_14_4 = document.createElement("img");
+img_14_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/6271cf4f442e294b86b5ea8aQvBWYpgA04")
+img_14_4.setAttribute("alt", "niko");
+img_14_4.style.width = "100px";
+img_14_4.style.height = "100px";
+
+const cell_14_5 = document.querySelector("tbody").rows[13].cells[4];
+const cell_14_6 = document.querySelector("tbody").rows[13].cells[5];
+
+const cell_15_1 = document.querySelector("tbody").rows[14].cells[0];
+const cell_15_2 = document.querySelector("tbody").rows[14].cells[1];
+const cell_15_3 = document.querySelector("tbody").rows[14].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_15_4 = document.querySelector("tbody").rows[14].cells[3];
+const img_15_4 = document.createElement("img");
+img_15_4.setAttribute("src", "https://spect.fp.ps.netease.com/file/6456a7f322c75f3bb9cd0db9VWq39GHb04?fop=imageView/2/w/245/h/230")
+img_15_4.setAttribute("alt", "niko");
+img_15_4.style.width = "100px";
+img_15_4.style.height = "50px";
+
+const cell_15_5 = document.querySelector("tbody").rows[14].cells[4];
+const cell_15_6 = document.querySelector("tbody").rows[14].cells[5];
+
+const cell_16_1 = document.querySelector("tbody").rows[15].cells[0];
+const cell_16_2 = document.querySelector("tbody").rows[15].cells[1];
+const cell_16_3 = document.querySelector("tbody").rows[15].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_16_4 = document.querySelector("tbody").rows[15].cells[3];
+const img_16_4 = document.createElement("img");
+img_16_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/6179986aa37d2c78ed1a16b5LyGDDrld03")
+img_16_4.setAttribute("alt", "niko");
+img_16_4.style.width = "100px";
+img_16_4.style.height = "100px";
+
+const cell_16_5 = document.querySelector("tbody").rows[15].cells[4];
+const cell_16_6 = document.querySelector("tbody").rows[15].cells[5];
+
+const cell_17_1 = document.querySelector("tbody").rows[16].cells[0];
+const cell_17_2 = document.querySelector("tbody").rows[16].cells[1];
+const cell_17_3 = document.querySelector("tbody").rows[16].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_17_4 = document.querySelector("tbody").rows[16].cells[3];
+const img_17_4 = document.createElement("img");
+img_17_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/5aa02c8569b21a88c3aefa0brqoaujxU")
+img_17_4.setAttribute("alt", "niko");
+img_17_4.style.width = "100px";
+img_17_4.style.height = "100px";
+
+const cell_17_5 = document.querySelector("tbody").rows[16].cells[4];
+const cell_17_6 = document.querySelector("tbody").rows[16].cells[5];
+
+const cell_18_1 = document.querySelector("tbody").rows[17].cells[0];
+const cell_18_2 = document.querySelector("tbody").rows[17].cells[1];
+const cell_18_3 = document.querySelector("tbody").rows[17].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_18_4 = document.querySelector("tbody").rows[17].cells[3];
+const img_18_4 = document.createElement("img");
+img_18_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/5aa02c96adce5f1d91fe27be00S1ADiu")
+img_18_4.setAttribute("alt", "niko");
+img_18_4.style.width = "100px";
+img_18_4.style.height = "100px";
+
+const cell_18_5 = document.querySelector("tbody").rows[17].cells[4];
+const cell_18_6 = document.querySelector("tbody").rows[17].cells[5];
+
+const cell_19_1 = document.querySelector("tbody").rows[18].cells[0];
+const cell_19_2 = document.querySelector("tbody").rows[18].cells[1];
+const cell_19_3 = document.querySelector("tbody").rows[18].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_19_4 = document.querySelector("tbody").rows[18].cells[3];
+const img_19_4 = document.createElement("img");
+img_19_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/5a9fd45302c9a18f3c9eca349z1RAAZ9")
+img_19_4.setAttribute("alt", "niko");
+img_19_4.style.width = "100px";
+img_19_4.style.height = "100px";
+
+const cell_19_5 = document.querySelector("tbody").rows[18].cells[4];
+const cell_19_6 = document.querySelector("tbody").rows[18].cells[5];
+
+const cell_20_1 = document.querySelector("tbody").rows[19].cells[0];
+const cell_20_2 = document.querySelector("tbody").rows[19].cells[1];
+const cell_20_3 = document.querySelector("tbody").rows[19].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_20_4 = document.querySelector("tbody").rows[19].cells[3];
+const img_20_4 = document.createElement("img");
+img_20_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/5a9fd45169b21ae4e2268192XHxJ5hrs")
+img_20_4.setAttribute("alt", "niko");
+img_20_4.style.width = "100px";
+img_20_4.style.height = "100px";
+
+const cell_20_5 = document.querySelector("tbody").rows[19].cells[4];
+const cell_20_6 = document.querySelector("tbody").rows[19].cells[5];
+
+const cell_21_1 = document.querySelector("tbody").rows[20].cells[0];
+const cell_21_2 = document.querySelector("tbody").rows[20].cells[1];
+const cell_21_3 = document.querySelector("tbody").rows[20].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_21_4 = document.querySelector("tbody").rows[20].cells[3];
+const img_21_4 = document.createElement("img");
+img_21_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/60d1593c143cfa4f5ceafc90I62GOuZD03")
+img_21_4.setAttribute("alt", "niko");
+img_21_4.style.width = "100px";
+img_21_4.style.height = "100px";
+
+const cell_21_5 = document.querySelector("tbody").rows[20].cells[4];
+const cell_21_6 = document.querySelector("tbody").rows[20].cells[5];
+
+const cell_22_1 = document.querySelector("tbody").rows[21].cells[0];
+const cell_22_2 = document.querySelector("tbody").rows[21].cells[1];
+const cell_22_3 = document.querySelector("tbody").rows[21].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_22_4 = document.querySelector("tbody").rows[21].cells[3];
+const img_22_4 = document.createElement("img");
+img_22_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/5a9fd0d8aa49f1fe03de25dczLmPe5KQ")
+img_22_4.setAttribute("alt", "niko");
+img_22_4.style.width = "100px";
+img_22_4.style.height = "100px";
+
+const cell_22_5 = document.querySelector("tbody").rows[21].cells[4];
+const cell_22_6 = document.querySelector("tbody").rows[21].cells[5];
+
+const cell_23_1 = document.querySelector("tbody").rows[22].cells[0];
+const cell_23_2 = document.querySelector("tbody").rows[22].cells[1];
+const cell_23_3 = document.querySelector("tbody").rows[22].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_23_4 = document.querySelector("tbody").rows[22].cells[3];
+const img_23_4 = document.createElement("img");
+img_23_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/5aa02c5502c9a1460d3cad93UyMigZ7S")
+img_23_4.setAttribute("alt", "niko");
+img_23_4.style.width = "100px";
+img_23_4.style.height = "100px";
+
+const cell_23_5 = document.querySelector("tbody").rows[22].cells[4];
+const cell_23_6 = document.querySelector("tbody").rows[22].cells[5];
+
+const cell_24_1 = document.querySelector("tbody").rows[23].cells[0];
+const cell_24_2 = document.querySelector("tbody").rows[23].cells[1];
+const cell_24_3 = document.querySelector("tbody").rows[23].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_24_4 = document.querySelector("tbody").rows[23].cells[3];
+const img_24_4 = document.createElement("img");
+img_24_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/5aa02c57fb758a6794d5f8d0MtQFYjk0")
+img_24_4.setAttribute("alt", "niko");
+img_24_4.style.width = "100px";
+img_24_4.style.height = "100px";
+
+const cell_24_5 = document.querySelector("tbody").rows[23].cells[4];
+const cell_24_6 = document.querySelector("tbody").rows[23].cells[5];
+
+const cell_25_1 = document.querySelector("tbody").rows[24].cells[0];
+const cell_25_2 = document.querySelector("tbody").rows[24].cells[1];
+const cell_25_3 = document.querySelector("tbody").rows[24].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_25_4 = document.querySelector("tbody").rows[24].cells[3];
+const img_25_4 = document.createElement("img");
+img_25_4.setAttribute("src", "https://g.fp.ps.netease.com/market/file/6271d0c7672a5289b11166edijXvg3Ll04")
+img_25_4.setAttribute("alt", "niko");
+img_25_4.style.width = "100px";
+img_25_4.style.height = "100px";
+
+const cell_25_5 = document.querySelector("tbody").rows[24].cells[4];
+const cell_25_6 = document.querySelector("tbody").rows[24].cells[5];
+
+const cell_26_1 = document.querySelector("tbody").rows[25].cells[0];
+const cell_26_2 = document.querySelector("tbody").rows[25].cells[1];
+const cell_26_3 = document.querySelector("tbody").rows[25].cells[2];
+// code pour mettre une image dans ma cellule suivante
+const cell_26_4 = document.querySelector("tbody").rows[25].cells[3];
+const img_26_4 = document.createElement("img");
+img_26_4.setAttribute("src", "FUTUR")
+img_26_4.setAttribute("alt", "NEXT");
+img_26_4.style.width = "100px";
+img_26_4.style.height = "100px";
+
+const cell_26_5 = document.querySelector("tbody").rows[25].cells[4];
+const cell_26_6 = document.querySelector("tbody").rows[25].cells[5];
+
+
+cell_1_1.textContent = "2018";
+cell_1_2.textContent = "2";
+cell_1_3.textContent = "Stickers Londres";
+cell_1_4.appendChild(img_1_4);
+cell_1_5.textContent = "10e"
+cell_1_6.textContent = ""
+
+cell_2_1.textContent = "01/11/2021"
+cell_2_2.textContent = "1"
+cell_2_3.textContent = "Gants ruban adhesif"
+cell_2_4.appendChild(img_2_4);
+cell_2_5.textContent = "65e"
+cell_2_6.textContent = ""
+
+cell_3_1.textContent = "04/11/2021"
+cell_3_2.textContent = "5"
+cell_3_3.textContent = "stickers stockholm g2"
+cell_3_4.appendChild(img_3_4);
+cell_3_5.textContent = "0.3e"
+cell_3_6.textContent = ""
+
+cell_4_1.textContent = "04/11/2021"
+cell_4_2.textContent = "1"
+cell_4_3.textContent = "stickers stockholm zywoo holo"
+cell_4_4.appendChild(img_4_4);
+cell_4_5.textContent = "1e"
+cell_4_6.textContent = ""
+
+cell_5_1.textContent = "04/11/2021"
+cell_5_2.textContent = "3"
+cell_5_3.textContent = "stickers stockholm NIKO "
+cell_5_4.appendChild(img_5_4);
+cell_5_5.textContent = "3.27e"
+cell_5_6.textContent = ""
+
+cell_6_1.textContent = "04/11/2021"
+cell_6_2.textContent = "240"
+cell_6_3.textContent = "random stockholm"
+cell_6_4.appendChild(img_6_4);
+cell_6_5.textContent = "20e"
+cell_6_6.textContent = ""
+
+cell_7_1.textContent = "11/11/2021"
+cell_7_2.textContent = "1"
+cell_7_3.textContent = "Usp Whiteout"
+cell_7_4.appendChild(img_7_4);
+cell_7_5.textContent = "3e"
+cell_7_6.textContent = ""
+
+cell_8_1.textContent = "11/11/2021"
+cell_8_2.textContent = "1"
+cell_8_3.textContent = "ak gold arabesque "
+cell_8_4.appendChild(img_8_4);
+cell_8_5.textContent = "513e"
+
+
+cell_9_1.textContent = "20/02/2022"
+cell_9_2.textContent = "2"
+cell_9_3.textContent = "Dust 2 collection"
+cell_9_4.appendChild(img_9_4);
+cell_9_5.textContent = "3e"
+cell_9_6.textContent = ""
+
+cell_10_1.textContent = "20/02/2022"
+cell_10_2.textContent = "1"
+cell_10_3.textContent = "Dust 2 collection"
+cell_10_4.appendChild(img_10_4);
+cell_10_5.textContent = "3e"
+cell_10_6.textContent = ""
+
+cell_11_1.textContent = "20/02/2022"
+cell_11_2.textContent = "1"
+cell_11_3.textContent = "Dust 2 collection"
+cell_11_4.appendChild(img_11_4);
+cell_11_5.textContent = "1.5e"
+cell_11_6.textContent = ""
+
+cell_12_1.textContent = "18/04/2023"
+cell_12_2.textContent = "1"
+cell_12_3.textContent = "Bayonet black laminate"
+cell_12_4.appendChild(img_12_4);
+cell_12_5.textContent = "382e"
+cell_12_6.textContent = ""
+
+cell_13_1.textContent = "21/04/2023"
+cell_13_2.textContent = "25"
+cell_13_3.textContent = "breakout case"
+cell_13_4.appendChild(img_13_4);
+cell_13_5.textContent = "5.5e"
+cell_13_6.textContent = ""
+
+cell_14_1.textContent = "01/05/2023"
+cell_14_2.textContent = "1&4"
+cell_14_3.textContent = "CPH stickers 1holo 4 glitter"
+cell_14_4.appendChild(img_14_4);
+cell_14_5.textContent = "18e&1,5e"
+cell_14_6.textContent = ""
+
+cell_15_1.textContent = "03/05/2023"
+cell_15_2.textContent = "1"
+cell_15_3.textContent = "M4 eye of horus"
+cell_15_4.appendChild(img_15_4);
+cell_15_5.textContent = "442e"
+cell_15_6.textContent = ""
+
+cell_16_1.textContent = "04/05/2023"
+cell_16_2.textContent = "9"
+cell_16_3.textContent = "Dust2 souvenir stockholm"
+cell_16_4.appendChild(img_16_4);
+cell_16_5.textContent = "12,8e"
+cell_16_6.textContent = ""
+
+cell_17_1.textContent = "06/05/2023"
+cell_17_2.textContent = "6"
+cell_17_3.textContent = "gamma case "
+cell_17_4.appendChild(img_17_4);
+cell_17_5.textContent = "0.5e"
+cell_17_6.textContent = ""
+
+cell_18_1.textContent = "06/05/2023"
+cell_18_2.textContent = "9"
+cell_18_3.textContent = "gamma 2 case"
+cell_18_4.appendChild(img_18_4);
+cell_18_5.textContent = "0.5e"
+cell_18_6.textContent = ""
+
+cell_19_1.textContent = "06/05/2023"
+cell_19_2.textContent = "4"
+cell_19_3.textContent = "chroma 2 case"
+cell_19_4.appendChild(img_19_4);
+cell_19_5.textContent = "0.5e"
+cell_19_6.textContent = ""
+
+cell_20_1.textContent = "06/05/2023"
+cell_20_2.textContent = "5"
+cell_20_3.textContent = "chroma 3 case"
+cell_20_4.appendChild(img_20_4);
+cell_20_5.textContent = "0.5e"
+cell_20_6.textContent = ""
+
+cell_21_1.textContent = "06/05/2023"
+cell_21_2.textContent = "2"
+cell_21_3.textContent = "danger zone case"
+cell_21_4.appendChild(img_21_4);
+cell_21_5.textContent = "0.5e"
+cell_21_6.textContent = ""
+
+cell_22_1.textContent = "06/05/2023"
+cell_22_2.textContent = "16"
+cell_22_3.textContent = "glove case"
+cell_22_4.appendChild(img_22_4);
+cell_22_5.textContent = "0.5e"
+cell_22_6.textContent = ""
+
+cell_23_1.textContent = "06/05/2023"
+cell_23_2.textContent = "9"
+cell_23_3.textContent = "spectrum case"
+cell_23_4.appendChild(img_23_4);
+cell_23_5.textContent = "0.5e"
+cell_23_6.textContent = ""
+
+cell_24_1.textContent = "06/05/2023"
+cell_24_2.textContent = "3"
+cell_24_3.textContent = "spectrum 2 case"
+cell_24_4.appendChild(img_24_4);
+cell_24_5.textContent = "0.5e"
+cell_24_6.textContent = ""
+
+cell_25_1.textContent = "06/05/2023"
+cell_25_2.textContent = "2"
+cell_25_3.textContent = "cloud9 antwerp holo"
+cell_25_4.appendChild(img_25_4);
+cell_25_5.textContent = "32.66e"
+cell_25_6.textContent = ""
+
+cell_26_1.textContent = ""
+cell_26_2.textContent = ""
+cell_26_3.textContent = ""
+cell_26_4.appendChild(img_26_4);
+cell_26_5.textContent = ""
+cell_26_6.textContent = ""
+
+
+
+
+
+
+
+
+
+</script>
