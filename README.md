@@ -21,3 +21,22 @@ fetch('https://buff.163.com/goods/871803')
     cell_8_6.textContent = line_1013;
   })
   .catch(error => console.log(error));
+
+
+
+
+ou bien ça
+
+const valeur = document.querySelector('span[data-price]').getAttribute('data-price'); // récupère la valeur "14999"
+const cell_8_6 = document.querySelector("tbody").rows[7].cells[5]; // sélectionne la sixième cellule de la huitième ligne
+cell_8_6.textContent = valeur; // met à jour le contenu de la cellule avec la valeur récupérée
+
+
+
+
+sachant que la ligne de code sur le site que je veux ressemble à ça 
+
+<span class="custom-currency" data-price="14999" data-type="small" data-original-currency="CNY"  ></span>
+
+et que je veux juste extraire le 14999 pour le coller dans mon tableau
+mais ça marche pas wlh
